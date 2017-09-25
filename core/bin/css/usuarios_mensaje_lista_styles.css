@@ -1,0 +1,68 @@
+main .wrap {
+	height: 100%;
+	width: 90%;
+	margin: auto;
+}
+
+main .wrap .user_message {
+	margin:20px 0px; 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 20px;
+}
+
+main .wrap .mensajes_wrapper h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+main .wrap .user_message:hover {
+	background-color: #F0F0F0;
+}
+
+main .wrap .user_message .data {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+main .wrap .user_message .data .data_text {
+	width: 200px;
+}
+
+main .wrap .user_message .data .data_text a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 1em;
+}
+
+main .wrap .user_message .data img {
+	width: 100px;
+	margin-right: 20px;
+}
+
+main .wrap .user_message .data img:hover {
+	cursor: pointer;
+}
+
+main .wrap .user_message .message {
+	width: 80%;
+	margin: auto;
+	text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+	main .wrap .user_message {
+		flex-direction: column;
+		min-height: 150px;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+
+	main .wrap .user_message .message {
+		margin: 0px;
+	}
+}

@@ -1,0 +1,78 @@
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main .wrap{
+	width: 90%;
+}
+
+main .wrap,
+main .wrap .img {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+main .wrap .img {
+	margin-bottom: 20px;
+}
+
+main .wrap .img img {
+	max-width: 150px;
+	margin-bottom: 20px;
+}
+
+main .wrap .img h2 {
+	text-align: center;
+}
+
+main .wrap .acciones {
+	width: 80%;
+	display: flex;
+	padding: 10px 20px;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+main .wrap .acciones button {
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border:1px solid rgb(121, 82, 179);
+}
+
+main .wrap .acciones button:hover {
+	color: #fff; 
+	cursor: pointer;
+	transition: all 0.5s ease;
+	background-color:rgb(121, 82, 179);
+}
+
+/*Estilos del mensaje*/
+
+main .wrap .mensaje {
+	width: 70%;
+	padding: 10px 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	border:1px solid green;
+}
+
+/*clases predefinidas*/
+
+.hide {
+	display: none;
+}
+
+.girar {
+	animation: girar linear infinite 1.5s;
+}
+
+@keyframes girar {
+	from {transform: rotate(0deg);}
+	to { transform: rotate(360deg); }
+}

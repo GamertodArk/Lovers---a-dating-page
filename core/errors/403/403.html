@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Permiso Denegado</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="La mejor patlaforma para poder encontrar el amor, consigue pareja desde cualquier lugar del mundo!">
+
+	<!-- Facebook meta tags -->
+	<meta property="og:url" content="http://elvis.com:8085/projects/lovers/" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Lovers, encuentra tu amor idea" />
+	<meta property="og:description" content="Estas buscando pareja?, en lovers te damos las mejores opciones tanto para hombres como para mujeres" />
+	<meta property="og:image" content="http://elvis.com:8085/projects/lovers/views/app/img/logo_sin_fondo.png" />
+	<meta property="fb:app_id" content="263272770821463">
+
+	<!-- twitter meta tags -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@elvisgarcia6" />
+	<meta name="twitter:title" content="Lovers, el lugar perfecto para encontrar a tu amor ideal" />
+	<meta name="twitter:description" content="Encuentra al amor de tu vida en Lovers" />
+	<meta name="twitter:image" content="http://elvis.com:8085/projects/lovers/views/app/img/logo_sin_fondo.png" />
+
+
+	<!-- Javascript -->
+	<script src="http://elvis.com:8085/projects/lovers/core/bin/js/prefixfree.min.js"></script>
+	<script src="http://elvis.com:8085/projects/lovers/core/bin/js/headroom.min.js"></script>
+
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="views/app/favicon/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="views/app/favicon/favicon.ico">
+
+	
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="http://elvis.com:8085/projects/lovers/core/bin/css/font-awesome.css">
+	<link rel="stylesheet" href="http://elvis.com:8085/projects/lovers/core/bin/css/general_styles.css">
+	<link rel="stylesheet" href="http://elvis.com:8085/projects/lovers/core/bin/css/header_styles.css">
+	<link rel="stylesheet" href="http://elvis.com:8085/projects/lovers/core/bin/css/footer_styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<style>
+		main {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		main h3 {
+			max-width: 90%;
+			font-size: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		window.fbAsyncInit = function() {
+		FB.init({
+		appId            : '263272770821463',
+		autoLogAppEvents : true,
+		xfbml            : true,
+		version          : 'v2.10'
+		});
+		FB.AppEvents.logPageView();
+		};
+
+		(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+			     
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+		<section class="wrapper">
+			<header>
+				<nav>
+					<div class="name">
+						<span></span>
+						<a href="home" class="logo">Lovers</a>
+						<a href="#" id="menu_btn"><i id="icon" class="fa fa-bars" aria-hidden="true"></i></a>
+					</div>
+					<div class="links">
+						<a href="home">Inicio</a>
+						<a href="quienes-somos">¿Quienes somos?</a>
+						<a href="login">Iniciar sesion</a>
+						<a href="signup">Registrarse</a>
+					</div>
+				</nav>
+			</header>
+			<main id="main">
+				<h3>Usted no tiene permiso para acceder a esta parte de la pagina</h3>
+			</main>
+			<footer>
+				<div class="share">
+					<h2>Comparte esta pagina!</h2>
+					<span onclick="share()"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+				</div>
+				<div class="copyright">
+					<p>Lovers</p>
+					<p>Lovers - Copyright - 2017</p>
+					<p>Todos los derechos reservados</p>
+				</div>
+			</footer>
+		</section>
+<script src="http://elvis.com:8085/projects/lovers/core/bin/js/jquery.min.js"></script>
+<script src="http://elvis.com:8085/projects/lovers/core/bin/js/header_animation.js"></script>
+<script>
+	window.onload = function () {	
+		var main = document.getElementById('main');
+		if (main.offsetHeight < window.innerHeight) {
+			main.style.height = window.innerHeight + 'px';
+		}else if (main.pixelHeight < window.innerHeight) {
+			main.style.height = window.innerHeight + 'px';
+		}
+	}
+</script>
+<script>
+	$(window).on('resize',function () {
+		if ($(this).width() <= 700) {
+			if ($('#main').height() <= 450) {
+				$('#main').height('450px');
+			}else {	
+				$('#main').height('auto');
+			}
+		}else {
+			$('#main').height( $(this).height() + 'px');
+		}
+	});
+</script>
+<script>
+		function share() {
+			FB.ui(
+			 {
+			  method: 'share',
+			  href: 'http://elvis.com:8085/projects/lovers/'
+			}, function(response){});
+		}
+</script>
+</body>
+</html>

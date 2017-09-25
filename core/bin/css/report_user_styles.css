@@ -1,0 +1,90 @@
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main .wrap {
+	width: 100%;
+}
+
+main .wrap .success {
+	width: 70%;
+	margin: 20px 0px;
+	border-radius: 5px;
+	padding: 10px 20px;
+	text-align: center;
+	background-color: #1CEE11;
+}
+
+main .wrap,
+main .wrap .user,
+main .wrap .accion form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+main .wrap .user img {
+	max-width: 150px;
+}
+
+main .wrap .user h2 {
+	margin-bottom: 20px;
+}
+
+main .wrap .accion {
+	width: 100%;
+	margin-top: 20px;
+}
+
+main .wrap .accion form {
+	width: 90%;
+	margin: auto;
+}
+
+main .wrap .accion form label {
+	margin-bottom: 20px;
+}
+
+main .wrap .accion form textarea {
+	max-width: 70%;
+	width: 70%;
+	min-width: 200px;
+	max-height: 300px;
+	min-height: 250px;
+}
+
+main .wrap .accion form button {
+	background: #fff;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border:1px solid rgb(121, 82, 179);
+}
+
+main .wrap .accion form button:hover {
+	color: #fff; 
+	cursor: pointer;
+	transition: all 0.5s ease;
+	background-color:rgb(121, 82, 179);
+}
+
+/*Clases predefinidas*/
+.hidden {
+	display: none;
+}
+
+.error_empty {
+	color: red;
+}
+
+.girar {
+	animation: girar infinite linear 1.5s;
+}
+
+@keyframes girar {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}

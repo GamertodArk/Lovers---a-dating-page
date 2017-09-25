@@ -1,0 +1,67 @@
+main {
+	display: flex;
+	/*align-items: center;*/
+	flex-direction: column;
+	/*justify-content: center;*/
+}
+
+main h2 {
+	/*margin-left: 20%;*/
+	width: 90%;
+	margin: 20px auto 0px auto;
+
+}
+
+main hr {
+	margin: 20px auto;
+	width: 90%;
+}
+
+main .resultados {
+	width: 90%;
+	margin: 0px auto;
+
+}
+
+main .resultados .user_resultados {
+	width: 80%;
+	padding: 5px 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+   	margin: 5px auto;
+}
+
+main .resultados .user_resultados:hover {
+	background-color: #F0F0F0;
+}
+
+main .resultados .user_resultados .right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+main .resultados .user_resultados .right img {
+	width: 70px;
+	margin-right: 20px;
+}
+
+main .resultados .user_resultados a {
+	border:1px solid rgb(121, 82, 179);
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #000;
+}
+
+main .resultados .user_resultados a:hover {
+	transition: all 0.5s ease;
+	background-color:rgb(121, 82, 179);
+	color: #fff; 
+	cursor: pointer;
+
+}

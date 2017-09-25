@@ -1,0 +1,273 @@
+main .presentacion {
+	width: 100%;
+	height: 30em;
+	background-image: url(../../../views/app/img/presentacion-1.jpg);
+	background-size: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main .presentacion h2 {
+	padding: 10px 40px;
+	color: rgba(255,255,255, 0.75);
+	font-size: 50px;
+	border:1px solid rgba(255,255,255, 0.75);
+	border-radius: 10px;
+}
+
+main .presentacion p {
+	margin: 20px 0px;
+	color: rgba(255,255,255, 1);
+	font-size: 20px;
+}
+
+main .presentacion a {
+	color:rgb(255, 228, 132);
+	border:3px solid rgb(255, 228, 132) ;
+	padding: 10px 30px;
+	text-decoration: none;
+	
+
+}
+
+main .presentacion a:hover {
+	border-radius: 10px;
+	transition: all ease 0.5s;
+	background-color:rgb(255, 228, 132);
+	color: rgba(0,0,0, 0.75);
+}
+
+main .bestForYou {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main .bestForYou h2 {
+	font-size: 40px;
+	margin: 20px 0px;
+	font-weight: lighter;
+}
+
+main .bestForYou p {
+	max-width: 80%;
+	font-size: 24px;
+	text-align: center;
+	color: rgb(85, 85, 85);
+}
+main .bestForYou p a{
+	color:rgb(85, 85, 85); 
+}
+
+main .tercero {
+	width: 100%;
+	margin: 40px 0px;
+}
+
+main .tercero div {
+	max-width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+main .tercero div .hetero,
+main .tercero div .homo {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	text-align: center;
+}
+
+main .tercero div .hetero p,
+main .tercero div .homo p {
+	max-width: 90%;
+	margin-top: 20px;
+}
+
+main .separador-1,
+main .separador-2 {
+	max-width: 90%;
+	margin: auto;
+}
+
+main .anywhere {
+	width: 100%;
+	display: flex;
+	margin: 20px 0px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+main .anywhere h2 {
+	margin: 20px 0px;
+	font-size: 30px;
+}
+
+main .anywhere p {
+	max-width: 70%;
+	text-align: center;
+	font-size: 18px;
+}
+
+main .logos {
+	margin: 50px 0px;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction:row;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+}
+
+main .logos div i {
+	font-size: 100px;
+	margin-bottom: 20px;
+}
+
+main .logos div h3 {
+	font-size: 30px;
+}
+
+main .inicia {
+	margin: 50px 0px;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main .inicia h2 {
+	font-size: 40px;
+}
+
+main .inicia .buttons {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	margin: 20px 0px;
+	align-items: center;
+}
+
+main .inicia .buttons p {
+	margin: 0px 10px;
+	font-size: 20px;
+}
+
+main .inicia .buttons a {
+	color:rgb(121, 82, 179);
+	text-decoration: none;
+	font-size: 17px;
+	border:1px solid rgb(121, 82, 179);
+	padding: 7px 20px;
+	border-radius: 7px;
+}
+
+main .inicia .buttons a:hover {
+	transition: all ease 0.5s;
+	background-color: rgb(121, 82, 179);
+	color: #fff;
+}
+
+main .inicia p {
+	font-size: 18px;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 700px) {
+	main .presentacion {
+		height: 25em;
+	}
+
+	main .presentacion h2 {
+		font-size: 40px;
+	}
+
+	main .bestForYou h2 {
+		font-size: 30px;
+	}
+
+	main .bestForYou p {
+		font-size: 20px;
+	}
+
+	main .tercero div {
+		height: 350px;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	main .tercero div .hetero {
+		/*margin: 20px 0px;*/
+	}
+
+	main .tercero div .hetero,
+	main .tercero div .homo{
+		align-items: center;
+		justify-content: center;
+	}
+
+	main .tercero div .hetero p,
+	main .tercero div .homo p {
+		margin-top: 10px;
+	}
+
+	main .anywhere h2 {
+		font-size: 28px;
+	}
+
+	main .logos {
+		height: 550px;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+
+	main .logos div i  {
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	main .presentacion {
+		background-size: 110% auto;
+		background-position: center top;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	main .presentacion {
+		background-size: 120%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	main .anywhere h2 {
+		font-size: 25px;
+	}
+
+	main .presentacion {
+		background-size: 150%;
+		background-position: center center;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	main .anywhere h2 {
+		font-size: 23px;
+	}
+}

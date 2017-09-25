@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pagina no encontrada</title>
+	<?php include HEAD_TAGS ?>
+	<style>
+		main {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		main h3 {
+			max-width: 90%;
+			font-size: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<?php include FB_JS_SDK; ?>
+		<section class="wrapper">
+			<header>
+				<?php include HEADER_TAGS; ?>
+			</header>
+			<main id="main">
+				<h3>Lo sentimos, la pagina a la cual intentas acceder no existe o no esta disponible</h3>
+			</main>
+			<footer>
+				<?php include FOOTER_TAGS; ?>
+			</footer>
+		</section>
+	<?php include JS_SCRIPTS; ?>
+</body>
+</html>

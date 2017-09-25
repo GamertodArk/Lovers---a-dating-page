@@ -1,0 +1,151 @@
+main .wrap {
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+main .wrap .titulo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 20px 0px;
+}
+main .wrap .titulo img {
+	width: 100px;
+	margin-right: 20px;
+}
+
+main .wrap .mensajes_wrapper {
+	height: 100%;
+	/*background-color: #000;*/
+}
+
+/*Mensaje entrante*/
+main .wrap .mensajes_wrap {
+	margin: 20px 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+main .wrap .mensajes_wrap img {
+	width: 100px;
+	margin-right: 20px;
+}
+
+main .wrap .mensajes_wrap .mensaje a {
+	margin-bottom: 10px;
+	display: block;
+	color: #000;
+}
+
+
+/*Mensaje que nosotros enviamos*/
+
+main .wrap .mensajes_wrap_reverse {
+	margin: 20px 0px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;	
+}
+
+main .wrap .mensajes_wrap_reverse img {
+	width: 100px;
+	margin-left: 20px;	
+}
+
+main .wrap .mensajes_wrap_reverse .mensaje a {
+	text-align: right;
+	margin-bottom: 10px;
+	display: block;
+	color: #000;
+}
+
+main .wrap .mensajes_wrap_reverse .mensaje p{
+	text-align: right;
+}
+
+/*Form para enviar el mensaje*/
+
+main .wrap .send_message_wrap {
+	align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+main .wrap .send_message_wrap form {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main .wrap .send_message_wrap form textarea {
+	width: 90%;
+	max-width: 100%;
+	min-height: 100px;
+	max-height: 250px;
+}
+
+main .wrap .send_message_wrap form button {
+	border:1px solid rgb(121, 82, 179);
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	/*display: block;*/
+	margin:20px auto ;
+}
+
+main .wrap .send_message_wrap form button:hover {
+	transition: all 0.5s ease;
+	background-color:rgb(121, 82, 179);
+	color: #fff; 
+	cursor: pointer;
+}
+
+main .wrap .send_message_wrap .reload {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+main .wrap .send_message_wrap .reload #icon_span {
+	padding: 20px;
+	border: 1px solid rgb(121, 82, 179);
+	border-radius: 10px; 
+}
+
+main .wrap .send_message_wrap .reload #icon_span:hover {
+	transition: all 0.5s ease;
+	background-color:rgb(121, 82, 179);
+	color: #fff; 
+	cursor: pointer;		
+}
+
+/*Clases predefinidas*/
+
+.error_length {
+	border:0.5px solid red;
+}
+
+.hidden {
+	display: none;
+}
+
+/*Animaciones de los iconos*/
+
+.girar {
+	animation: girar infinite linear 1.5s;
+}
+
+@keyframes girar {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}

@@ -1,0 +1,11 @@
+Options All -indexes
+
+ErrorDocument 403 /projects/lovers/core/errors/403/403.html
+
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^.*$ ./index.php

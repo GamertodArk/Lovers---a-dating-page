@@ -1,0 +1,78 @@
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrap {
+	width: 100%;
+}
+
+.wrap .mensaje {
+	width: 70%;
+	color: #fff;
+	margin:20px auto;
+	display: flex;
+	padding: 10px 20px;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+	background-color:#F41115;
+}
+
+.wrap form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wrap form .input {
+	width: 70%;
+	padding: 20px;
+	margin: 20px 0px;
+	position: relative;
+	border-radius: 5px;
+	background-color: #0F9AE5;
+	box-shadow: 0px 3px 0px #1577AC;
+}
+
+.wrap form .input:hover {
+	cursor: pointer;
+}
+
+.wrap form .input p {
+	text-align: center;
+	color: #fff;
+}
+
+.wrap form .input input[type=file] {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.wrap form  input[type=submit] {
+	margin: auto ;
+	display: block;
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border:1px solid rgb(121, 82, 179);
+}
+
+.wrap form .input input[type=file]:hover {
+	cursor: pointer;
+}
+
+.wrap form  input[type=submit]:hover {
+	color: #fff; 
+	cursor: pointer;
+	transition: all 0.5s ease;
+	background-color:rgb(121, 82, 179);
+}

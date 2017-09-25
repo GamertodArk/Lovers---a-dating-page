@@ -1,0 +1,191 @@
+main {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-between;
+}
+
+main .form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+main .form form {
+	width: 70%;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+main .form form input[type=text]{
+	width: 95%;
+	padding: 5px;
+}
+
+main .form form #btn_search {
+	width: 5%;
+	display: inline-block;
+	height:30px;
+	width: 60px;
+	border: 1px solid #d3d3d3;
+	background: #f8f8f8;
+	text-align: center;
+}
+
+main .form form #btn_search:hover {
+	background-color:#EBEBEB; 
+}
+
+main .middle {
+	margin: 20px 0px;
+	widows: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+main .middle .find {
+	border: 1px solid #000;
+	text-align: center;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+main .middle .find h3 {
+	margin-bottom: 10px;
+}
+
+main .middle .find p {
+	margin: 20px 0px;
+}
+
+main .middle .find a {
+	text-decoration: none;
+	border:1px solid rgb(121, 82, 179);
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+main .middle .find a:hover {
+	transition: all 0.5s ease;
+	background-color:rgb(121, 82, 179);
+	color: #fff; 
+	cursor: pointer;
+}
+
+main .middle .amigos {
+	padding: 20px;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+
+main .middle .amigos h3 {
+	text-align: center;
+}
+
+main .middle .amigos .amigos_list div {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 20px 0px;
+	padding: 5px 10px;
+}
+
+main .middle .amigos .amigos_list div:hover {
+	background-color: #F0F0F0;
+}
+
+main .middle .amigos .amigos_list div a {
+	color: #000;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+main .middle .amigos .amigos_list div img {
+	width: 50px;
+	margin-right: 5px
+}
+
+main .middle .amigos .amigos_list .empty_friend {
+	margin-top: 20px;
+}
+
+
+main .hope {
+	padding: 20px;
+	border: 1px solid #000;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 20px auto;
+}
+
+main .hope h3 {
+	margin-bottom: 20px;
+}
+
+/*clases predefinidas*/
+.warning {
+	width: 90%;
+	margin: auto;
+	padding: 20px;
+	border: 2px solid #FFBF00;
+	text-align: center;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+}
+
+.error {
+	width: 90%;
+	margin: auto;
+	padding: 20px;
+	border: 2px solid #DF0101;
+	text-align: center;	
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+}
+
+.success {
+	width: 90%;
+	margin: auto;
+	padding: 20px;
+	border: 2px solid #01DF01;
+	text-align: center;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;		
+}
+
+main .fa-times:hover {
+	cursor: pointer;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 800px) {
+
+	main .middle {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	main .middle .find {
+		margin-bottom: 20px;
+		padding: 10px;
+		border-radius: 5px;
+	} 
+}

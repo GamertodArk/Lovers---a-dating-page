@@ -1,0 +1,167 @@
+main .formulario {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main .formulario form {
+	width: 100%;
+}
+
+main .formulario form .nombre,
+main .formulario form .apellido,
+main .formulario form .email,
+main .formulario form .password,
+main .formulario form .password_r {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto;
+}
+
+main .formulario form .nombre input[type=text],
+main .formulario form .apellido input[type=text],
+main .formulario form .email input[type=email],
+main .formulario form .password input[type=password],
+main .formulario form .password_r input[type=password] {
+	padding: 5px;
+}
+
+main .formulario form .genero,
+main .formulario form .intereses,
+main .formulario form .nacimientoFecha,
+main .formulario form .pais,
+main .formulario form .term {
+	width: 50%;
+	margin: 20px auto;
+}
+
+main .formulario form .intereses select,
+main .formulario form .genero select {
+	width: 7em;
+}
+
+main .formulario form .nacimientoFecha .inputs{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+main .formulario form .nacimientoFecha .inputs input[type=number] {
+	max-width: 5em;
+}
+
+main .formulario form .term {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+main .formulario form .term input[type=checkbox] {
+	margin-right: 5px;
+}
+
+main .formulario form input[type=button] {
+	border:1px solid rgb(121, 82, 179);
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	display: block;
+	margin:40px auto ;
+	
+}
+
+main .formulario form input[type=button]:hover {
+	transition: all 0.5s ease;
+	background-color:rgb(121, 82, 179);
+	color: #fff; 
+	cursor: pointer;
+}
+
+/*Estilos del mensaje*/
+
+.empty {
+	color: #DF0101;
+}
+
+main .formulario .mensaje {
+	margin-bottom: 20px;
+	display: none;
+}
+
+main .formulario .success {
+	justify-content: space-between;
+	border: 1px solid #01DF01;
+	padding: 10px 20px;
+	flex-direction: row;
+	color:#01DF01;
+	display: flex;
+	width:50%;
+}
+main .formulario .success .icon {
+	display: none;
+}
+
+main .formulario .error {
+	padding: 10px 20px;
+	width:50%;
+	border: 1px solid #DF0101;
+	color:#DF0101;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+main .formulario .error .icon {
+	display: none;
+}
+
+main .formulario .loading {
+	padding: 10px 20px;
+	width:50%;
+	border: 1px solid #000;
+	color:#000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+main .formulario .loading .icon {
+	animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+/*boton de facebook*/
+
+.facebook_signup_url {
+	text-decoration: none;
+	color: #fff;
+	background-color: #3b5998;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+/*mensade de error mediente el metodo get*/
+
+.error_get {
+	padding: 10px 20px;
+	width:50%;
+	border: 1px solid #DF0101;
+	color:#DF0101;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.error_get .icono {
+	color: #000;
+	cursor: pointer;
+}

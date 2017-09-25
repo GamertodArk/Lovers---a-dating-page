@@ -1,0 +1,38 @@
+main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+main .preguntas article {
+	max-width: 80%;
+	margin:auto;
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+}
+
+main .preguntas article:nth-last-child(1) {
+	border-bottom: none;
+}
+
+main .preguntas article p {
+	text-align: left;
+	margin: 10px 0px;
+	font-size: 18px;
+}
+
+main .preguntas article h2 {
+	text-align:center;
+}
+
+main .menu {
+	margin-bottom: 20px;
+}
+
+main .menu nav {
+	max-width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}

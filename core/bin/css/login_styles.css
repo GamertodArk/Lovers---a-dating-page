@@ -1,0 +1,125 @@
+main .form {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main .form .mensaje {
+	margin-bottom: 20px;
+	display: none;
+}
+
+main .form form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main .form form .email,
+main .form form .pass,
+main .form form .lost_password{
+	margin: 10px 0px;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+main .form form .email input[type=email],
+main .form form .pass input[type=password] {
+	padding: 5px;
+}
+
+main .form form input[type=button] {
+	border:1px solid rgb(121, 82, 179);
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+main .form form input[type=button]:hover {
+	transition: all 0.5s ease;
+	background-color:rgb(121, 82, 179);
+	color: #fff; 
+	cursor: pointer;
+}
+
+main .form .success {
+	padding: 10px 20px;
+	width:50%;
+	border: 1px solid #01DF01;
+	color:#01DF01;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+main .form .success .icon {
+	display: none;
+}
+
+main .form .error {
+	padding: 10px 20px;
+	width:50%;
+	border: 1px solid #DF0101;
+	color:#DF0101;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+main .form .error .icon {
+	display: none;
+}
+
+main .form .loading {
+	padding: 10px 20px;
+	width:50%;
+	border: 1px solid #000;
+	color:#000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+main .form .loading .icon {
+	animation: girar 1.5s linear infinite;
+}
+
+main .form .mensaje_needed {
+	width: 70%;
+	margin-bottom: 20%;
+}
+
+main .form .mensaje_needed .icono {
+	color: #000;
+}
+
+main .form .mensaje_needed .icono:hover {
+	cursor: pointer;
+}
+
+
+@keyframes girar {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+/*para cuando un campo este vacio*/
+.empty {
+	color: #DF0101;
+}
+
+/*facebook button styles*/
+.facebook_login_btn {
+	text-decoration: none;
+	color: #fff;
+	background-color: #3b5998;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
