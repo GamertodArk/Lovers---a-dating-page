@@ -1,11 +1,13 @@
-# Lovers---a-dating-page
+# Lovers - a dating page
 
-  Hello everyone, my name is Elvis Garcia, i am a guy who is beginning in the world of coding, for that reason i am starting with easy things.
-This time, i tried to biuld a dating page, it's not one of the best of them but i think that it is very decent, at least decent enoug,
-i did my best and i built it with everything i know, but i'd love if someone check my code and told me how i am doing, if i am going
-good in this world of coding, or there is something that i sould improve.
+Lovers is a platform where you can meet new people, make some connections and even find a love partner. From anywhere around the world you can talk to the people you want to meet and start a friendship that could end in a relationship.
 
-The whole page is comented, but they're in spanish, i am a Venezuelan guy so i built it in spanish, the next time i'm goint to try 
-to build one in English, it could be easer for you to understand my code.
+This projects uses the PHP technology as the server side language and some basic HTML/CSS/JavaScript for the view. It also uses MySQL as the main databases to store all the users information and the messages sent between them.
 
-Thank you very much for viewing my repository and i hope you tell me what you think about my code
+This code is complety open source and you can use it, modify, and do what you perfer with it but sell this exact code without modifying it, you can modify this code and sell your code modified but not this exact code.
+
+# Screenshots
+
+![Home page]( "This is the home page")
+![Portfolio]( "Show you hablities")
+![Contact Form]( "Contact Page")
