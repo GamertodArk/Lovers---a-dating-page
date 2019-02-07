@@ -8,4 +8,4 @@ This code is complety open source and you can use it, modify, and do what you pe
 
 # Screenshots
 
-![Home page](https://github.com/GamertodArk/Lovers-a-dating-page/blob/master/project-screenshots/Screenshot.png "This is the home page")
+![Home page](https://github.com/GamertodArk/Lovers-a-dating-page/blob/master/project-screenshots/Screenshot.jpg "This is the home page")
