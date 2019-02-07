@@ -8,6 +8,8 @@ This code is complety open source and you can use it, modify, and do what you pe
 
 # Screenshots
 
-![Home page]( "This is the home page")
-![Portfolio]( "Show you hablities")
-![Contact Form]( "Contact Page")
+![Home page](https://github.com/GamertodArk/Lovers-a-dating-page/blob/master/project-screenshots/screenshot-3.png "This is the home page")
+
+![Portfolio](https://github.com/GamertodArk/Lovers-a-dating-page/blob/master/project-screenshots/screenshot-2.png "Show you hablities")
+
+![Contact Form](https://github.com/GamertodArk/Lovers-a-dating-page/blob/master/project-screenshots/screenshot-1.png "Contact Page")
